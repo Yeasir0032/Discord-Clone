@@ -57,13 +57,16 @@ const MemberConversationPage = async ({ params, searchParams }: props) => {
         type="conversation"
         server={serverData}
         profile={profile}
+        // @ts-ignore
         imgUrl={otherMemberProfile[0].Profile.imgUrl}
+        // @ts-ignore
         name={otherMemberProfile[0].Profile.name}
       />
       {!searchParams.video ? (
         <>
           <ChatMessages
             member={currentMember}
+            // @ts-ignore
             name={otherMemberProfile[0].Profile?.name}
             chatId={conversation.id}
             type="conversation"
@@ -76,6 +79,7 @@ const MemberConversationPage = async ({ params, searchParams }: props) => {
             }}
           />
           <ChatInput
+            // @ts-ignore
             name={otherMemberProfile[0].Profile.name}
             type="conversation"
             apiUrl="/api/socket/direct-messages"

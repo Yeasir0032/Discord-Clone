@@ -100,6 +100,7 @@ const MemberView = ({
       <div className="flex flex-col gap-y-1">
         <div className="text-xs font-semibold items-center flex gap-x-1">
           {member?.Profile?.name}
+          {/* @ts-ignore */}
           {roleIconMap[member.role]}
         </div>
         {editMode && (

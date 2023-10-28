@@ -29,6 +29,7 @@ const InviteCodePage = async ({ params }: props) => {
     .eq("profileId", profile[0].id);
   if (!memberTemp) return <div></div>;
   if (memberTemp.length !== 0) {
+    //@ts-ignore
     if (memberTemp?.[0].Server?.inviteCode === params.inviteCode) {
       return redirect(`/servers/${memberTemp[0].serverId}`);
     }
