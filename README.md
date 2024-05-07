@@ -1,7 +1,9 @@
 # Discord Clone
+
 Welcome to the Discord Clone built with Next.js! This project aims to replicate the functionality and design of the popular communication platform Discord using Next.js framework.
 
 ![Demo photo](https://utfs.io/f/ff27ddb0-dadb-426a-b064-72d8dd3b85df-w4d8p.png)
+
 ## Features
 
 1. **Real-time Chatting:** Enjoy seamless real-time messaging with friends and communities. Send text messages instantly and engage in conversations effortlessly.
@@ -15,10 +17,10 @@ Welcome to the Discord Clone built with Next.js! This project aims to replicate 
 
 6. **Emojis and Reactions:** Spruce up your conversations with emojis and reactions. React to messages to express your feelings or simply add some fun to the chat.
 
-
 ## Tech Stacks
 
 - **Frontend:**
+
   - [Next.js 13.5.4](https://nextjs.org/)
   - [React.js 18](https://react.dev/)
   - [Tailwind CSS](https://tailwindcss.com/)
@@ -40,7 +42,9 @@ Welcome to the Discord Clone built with Next.js! This project aims to replicate 
   - [Supabase (Postresql Database)](https://supabase.com/dashboard/)
 
 Thank you for your interest in DiscordClone and your willingness to contribute!
+
 ## Local development
+
 ### Fork the repo
 
 To contribute code to Discor-Clone, you must fork the [Discord-Clone](https://github.com/Yeasir0032/Discord-Clone) repo.
@@ -53,11 +57,11 @@ To contribute code to Discor-Clone, you must fork the [Discord-Clone](https://gi
    git clone https://github.com/<github_username>/Discord-Clone
    ```
 
-2. Go to the Supabase directory:
+2. Go to the Discord-Clone directory:
    ```sh
    cd discord-clone
    ```
-   
+
 ### Install dependencies
 
 1. Install the dependencies in the root of the repo.
@@ -69,19 +73,42 @@ To contribute code to Discor-Clone, you must fork the [Discord-Clone](https://gi
 2. Copy the example `.env.local.example` to `.env.local`
 
    ```sh
-   .env.local.example 
+   .env.local.example
    ```
+
 ### Setup Environment variables
+
 1. Create a .env.local in your root directory
 2. Visit to [Supabase](https://supabase.com/dashboard/) website to create a project,then get its base url and base anon key.
 3. Visit to [UploadThing](https://uploadthing.com/dashboard) website to create a new app and get its appid and secret key
-4. Visit to [ClerkJS](https://clerk.com/docs/references/javascript/overview) website to create a new app and get its public key and secret key 
+4. Visit to [ClerkJS](https://clerk.com/docs/references/javascript/overview) website to create a new app and get its public key and secret key
 5. Visit to [LiveKit](https://livekit.io/) website to create a new app and get its public key,url and secret key
 6. Paste the credentials in the respective positions.
+7. Keep the rest as it is.
+
 ### Testing
-To start a development server 
-   ```sh
-   npm run dev # start all the applications
-   ```
+
+To start a development server
+
+```sh
+npm run dev # start all the applications
+```
+
 Visit [http://localhost:3000/](http://localhost:3000/)
- 
+
+### Deployment
+
+For deployment use services like **Railway** , **Digital Ocean**, **AWS**, **Google Cloud**, **Azure**, etc.
+
+## Documentation
+
+### App Routes
+
+- **auth** -> For authentication using ClerkJs.
+- **invite** -> For inviting to existing servers.
+- **main** -> contains routes for server, channel and conversations pages.
+  - **/servers/serverId** -> server route
+    - **/channels/channelId** -> channel specific route
+  - **/conversations/memberId** -> member of server private conversation.
+- **setup** -> To create an initial server create modal.
+- **api** -> For api handling
