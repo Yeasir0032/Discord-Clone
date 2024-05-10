@@ -1,6 +1,6 @@
 # Discord Clone
 
-Welcome to the Discord Clone built with Next.js! This project aims to replicate the functionality and design of the popular communication platform Discord using Next.js framework.
+Welcome to the Discord Clone built with Next.js! This project aims to replicate the functionality and design of the popular communication platform Discord using the Next.js framework.
 
 ![Demo photo](https://utfs.io/f/ff27ddb0-dadb-426a-b064-72d8dd3b85df-w4d8p.png)
 
@@ -11,7 +11,7 @@ Welcome to the Discord Clone built with Next.js! This project aims to replicate 
 2. **Voice and Video Calls:** Connect with friends through high-quality voice and video calls. Experience crystal-clear audio and video communication, whether you're chatting one-on-one or in a group.
 
 3. **Server and Channel Management:** Create and manage servers and channels to organize your communities and conversations efficiently. Customize permissions and roles to maintain control over your server environment.
-4. **Direct messages**: Conversate with any members of the server directly. You can give video call or an audio call directly.
+4. **Direct messages**: Conversate with any members of the server directly. You can give a video call or an audio call directly.
 
 5. **Rich Media Support:** Share images, videos, GIFs, and other media files within your conversations. Express yourself with a wide range of multimedia options.
 
@@ -25,7 +25,7 @@ Welcome to the Discord Clone built with Next.js! This project aims to replicate 
   - [React.js 18](https://react.dev/)
   - [Tailwind CSS](https://tailwindcss.com/)
   - [ClerkJS (For Authentication)](https://clerk.com/docs/references/javascript/overview)
-  - [LiveKit (For realtime video calling)](https://livekit.io/)
+  - [LiveKit (For real-time video calling)](https://livekit.io/)
   - [UploadThing (For photo upload)](https://uploadthing.com/dashboard)
   - [Emoji-mart (Using Emojis)](https://www.npmjs.com/package/emoji-mart)
   - [Zustand (For State management)](https://www.npmjs.com/package/zustand)
