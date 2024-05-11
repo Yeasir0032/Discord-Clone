@@ -34,11 +34,11 @@ Welcome to the Discord Clone built with Next.js! This project aims to replicate 
   - [Lucide react](https://lucide.dev/guide/packages/lucide-react)
   - [Axios](https://www.npmjs.com/package/axios)
   - [React Query](https://www.npmjs.com/package/@tanstack/react-query)
-  - Typescript
+  - [Typescript](https://www.npmjs.com/package/typescript)
 
 - **Backend :**
-  - Node.js
-  - Socket IO
+  - [Node.js](https://nodejs.org/docs/latest/api/) 
+  - [Socket IO](https://socket.io/docs/v4/)
   - [Supabase (Postresql Database)](https://supabase.com/dashboard/)
 
 Thank you for your interest in DiscordClone and your willingness to contribute!
