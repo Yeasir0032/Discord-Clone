@@ -1,6 +1,6 @@
 # Discord Clone
 
-Welcome to the Discord Clone built with Next.js! This project aims to replicate the functionality and design of the popular communication platform Discord using Next.js framework.
+Welcome to the Discord Clone built with Next.js! This project aims to replicate the functionality and design of the popular communication platform Discord using the Next.js framework. It is deployed live at https://discord-a.up.railway.app/.
 
 ![Demo photo](https://utfs.io/f/ff27ddb0-dadb-426a-b064-72d8dd3b85df-w4d8p.png)
 
@@ -11,7 +11,7 @@ Welcome to the Discord Clone built with Next.js! This project aims to replicate 
 2. **Voice and Video Calls:** Connect with friends through high-quality voice and video calls. Experience crystal-clear audio and video communication, whether you're chatting one-on-one or in a group.
 
 3. **Server and Channel Management:** Create and manage servers and channels to organize your communities and conversations efficiently. Customize permissions and roles to maintain control over your server environment.
-4. **Direct messages**: Conversate with any members of the server directly. You can give video call or an audio call directly.
+4. **Direct messages**: Conversate with any members of the server directly. You can give a video call or an audio call directly.
 
 5. **Rich Media Support:** Share images, videos, GIFs, and other media files within your conversations. Express yourself with a wide range of multimedia options.
 
@@ -25,7 +25,7 @@ Welcome to the Discord Clone built with Next.js! This project aims to replicate 
   - [React.js 18](https://react.dev/)
   - [Tailwind CSS](https://tailwindcss.com/)
   - [ClerkJS (For Authentication)](https://clerk.com/docs/references/javascript/overview)
-  - [LiveKit (For realtime video calling)](https://livekit.io/)
+  - [LiveKit (For real-time video calling)](https://livekit.io/)
   - [UploadThing (For photo upload)](https://uploadthing.com/dashboard)
   - [Emoji-mart (Using Emojis)](https://www.npmjs.com/package/emoji-mart)
   - [Zustand (For State management)](https://www.npmjs.com/package/zustand)
@@ -47,7 +47,7 @@ Thank you for your interest in DiscordClone and your willingness to contribute!
 
 ### Fork the repo
 
-To contribute code to Discor-Clone, you must fork the [Discord-Clone](https://github.com/Yeasir0032/Discord-Clone) repo.
+To contribute to this Discord-Clone, you must first fork the [Discord-Clone](https://github.com/Yeasir0032/Discord-Clone) repo.
 
 ### Clone the repo
 
@@ -64,7 +64,7 @@ To contribute code to Discor-Clone, you must fork the [Discord-Clone](https://gi
 
 ### Install dependencies
 
-1. Install the dependencies in the root of the repo.
+1. Install the dependencies in the root of the repo:
 
    ```sh
    npm install # install dependencies
@@ -79,10 +79,10 @@ To contribute code to Discor-Clone, you must fork the [Discord-Clone](https://gi
 ### Setup Environment variables
 
 1. Create a .env.local in your root directory
-2. Visit to [Supabase](https://supabase.com/dashboard/) website to create a project,then get its base url and base anon key.
-3. Visit to [UploadThing](https://uploadthing.com/dashboard) website to create a new app and get its appid and secret key
-4. Visit to [ClerkJS](https://clerk.com/docs/references/javascript/overview) website to create a new app and get its public key and secret key
-5. Visit to [LiveKit](https://livekit.io/) website to create a new app and get its public key,url and secret key
+2. Visit [Supabase](https://supabase.com/dashboard/) website to create a project, then get its base URL and base anon key.
+3. Visit [UploadThing](https://uploadthing.com/dashboard) website to create a new app and get its app ID and secret key.
+4. Visit [ClerkJS](https://clerk.com/docs/references/javascript/overview) website to create a new app and get its public key and secret key.
+5. Visit [LiveKit](https://livekit.io/) website to create a new app and get its public key, URL, and secret key.
 6. Paste the credentials in the respective positions.
 7. Keep the rest as it is.
 
@@ -106,9 +106,9 @@ For deployment use services like **Railway** , **Digital Ocean**, **AWS**, **Goo
 
 - **auth** -> For authentication using ClerkJs.
 - **invite** -> For inviting to existing servers.
-- **main** -> contains routes for server, channel and conversations pages.
+- **main** -> contains routes for server, channel, and conversations pages.
   - **/servers/serverId** -> server route
     - **/channels/channelId** -> channel specific route
   - **/conversations/memberId** -> member of server private conversation.
-- **setup** -> To create an initial server create modal.
+- **setup** -> To create an initial server create a modal.
 - **api** -> For api handling
