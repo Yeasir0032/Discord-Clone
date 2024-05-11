@@ -43,6 +43,10 @@ Welcome to the Discord Clone built with Next.js! This project aims to replicate 
 
 Thank you for your interest in DiscordClone and your willingness to contribute!
 
+## Contributing
+
+We welcome contributions from the community! Before contributing, please review our [Contribution Guidelines](./Contributing.md) to get started.
+
 ## Local development
 
 ### Fork the repo
@@ -112,3 +116,5 @@ For deployment use services like **Railway** , **Digital Ocean**, **AWS**, **Goo
   - **/conversations/memberId** -> member of server private conversation.
 - **setup** -> To create an initial server create a modal.
 - **api** -> For api handling
+
+
