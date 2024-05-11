@@ -33,3 +33,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore .vscode directory
+.vscode/
+
+# Ignore .github directory
+.github/
