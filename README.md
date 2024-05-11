@@ -1,6 +1,6 @@
 # Discord Clone
 
-Welcome to the Discord Clone built with Next.js! This project aims to replicate the functionality and design of the popular communication platform Discord using the Next.js framework.
+Welcome to the Discord Clone built with Next.js! This project aims to replicate the functionality and design of the popular communication platform Discord using the Next.js framework. It is deployed live at https://discord-a.up.railway.app/.
 
 ![Demo photo](https://utfs.io/f/ff27ddb0-dadb-426a-b064-72d8dd3b85df-w4d8p.png)
 
