@@ -24,14 +24,14 @@ Once you have forked your repository, go to your profile inside the repository s
 Once you locate your repository, you must clone it to your local machine.
 
 ```sh
-git clone https://github.com/YOUR-USERNAME/Draw-it-out.git
+git clone https://github.com/YOUR-USERNAME/Discord-Clone.git
 ```
 
 Congratulations! You have successfully cloned the repository to your local machine. You can now make changes, add new features, or fix issues in the codebase.
 
 ### Step 3: Go to the directory
 ```sh
-cd Draw-it-out
+cd Discord-Clone
 ```
 
 ### Step 4: Install all the dependencies
