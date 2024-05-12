@@ -10,7 +10,7 @@ export async function GET(req: Request, res: Response) {
     } else {
       res.status(200).json(servers);
     }
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error fetching servers:", error.message);
     res.status(500).json({ error: "Internal Server Error" });
   }
