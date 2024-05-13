@@ -117,4 +117,10 @@ For deployment use services like **Railway** , **Digital Ocean**, **AWS**, **Goo
 - **setup** -> To create an initial server create a modal.
 - **api** -> For api handling
 
+- # Contributors
+  Here's the contributors that are contributing :-
+  <a href="https://github.com/Yeasir0032/Discord-Clone/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Yeasir0032/Discord-Clone" />
+</a>
+
 
