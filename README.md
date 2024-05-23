@@ -132,7 +132,7 @@ npm run dev # start all the applications
 <div align = "center">
  <h3>Thank you for contributing to our repository.😃</h3>
 <a href="https://github.com/Yeasir0032/Discord-Clone/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Yeasir0032/Discord-Clone" data-canonical-src="https://contrib.rocks/image?repo=Yeasir0032/Discord-Clone" style="max-width: 100%;"/>
+  <img src="https://camo.githubusercontent.com/575ad640d70bcf29f339890f9dacb596414786115a4e6b55c5928841c7d99cb6/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d596561736972303033322f446973636f72642d436c6f6e65" data-canonical-src="https://contrib.rocks/image?repo=Yeasir0032/Discord-Clone" style="max-width: 100%;"/>
 </a>
 
 ### Show some ❤️ by starring this awesome repository!
