@@ -9,3 +9,13 @@ export type NextApiResponseServerIo = NextApiResponse & {
     };
   };
 };
+
+export type Server = {
+  id: string;
+  name: string;
+  imgUrl: string;
+  inviteCode: string;
+  profileId: string;
+  createdAt: string;
+  updatedAt: string;
+};
