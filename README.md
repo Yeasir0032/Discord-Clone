@@ -134,7 +134,6 @@ npm run dev # start all the applications
 <a href="https://github.com/Yeasir0032/Discord-Clone/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Yeasir0032/Discord-Clone" />
 </a>
-<!--->![Contributors](https://contrib.rocks/image?repo=Yeasir0032/Discord-Clone) <-->
 
 ### Show some ❤️ by starring this awesome repository!
 
