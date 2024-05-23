@@ -13,6 +13,9 @@ export type NextApiResponseServerIo = NextApiResponse & {
 export type Server = {
   id: string;
   name: string;
-  imageUrl: string;
+  imgUrl: string;
   inviteCode: string;
+  profileId: string;
+  createdAt: string;
+  updatedAt: string;
 };
