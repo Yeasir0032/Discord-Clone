@@ -12,7 +12,7 @@ jobs:
       - name: Issue Opened
         uses: actions/github-script@v4
         with:
-          github-token: ${{ secrets.PAT }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo, number } = context.issue;
             const commentauthor = context.payload.issue.user.login;
