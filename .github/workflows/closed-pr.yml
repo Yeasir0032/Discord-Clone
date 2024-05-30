@@ -18,7 +18,7 @@ jobs:
         if: steps.pr_status.outputs.merged == 'true'
         uses: actions/github-script@v4
         with:
-          github-token: ${{ secrets.PAT }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo, number } = context.issue;
             const commentAuthor = context.payload.pull_request.user.login;
@@ -30,7 +30,7 @@ jobs:
         if: steps.pr_status.outputs.merged != 'true'
         uses: actions/github-script@v4
         with:
-          github-token: ${{ secrets.PAT }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo, number } = context.issue;
             const commentAuthor = context.payload.pull_request.user.login;
