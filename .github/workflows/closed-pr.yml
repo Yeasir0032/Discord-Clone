@@ -1,0 +1,41 @@
+name: Comment on PR Closure
+
+on:
+  pull_request_target:
+    types:
+      - closed
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check PR Merge Status
+        id: pr_status
+        run: echo "::set-output name=merged::${{ github.event.pull_request.merged }}"
+
+      - name: Comment on PR Closure
+        if: steps.pr_status.outputs.merged == 'true'
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.PAT }}
+          script: |
+            const { owner, repo, number } = context.issue;
+            const commentAuthor = context.payload.pull_request.user.login;
+            const commentBody = `Hey @${ commentAuthor } Super Happy to inform you that your PR has been merged!!!!!!\nWould like to see you again super soon.`;
+            await github.issues.createComment({ owner, repo, issue_number: number, body: commentBody });
+            console.log(`Commented on the closed PR: ${commentBody}.`);
+        
+      - name: Comment on PR Closure
+        if: steps.pr_status.outputs.merged != 'true'
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.PAT }}
+          script: |
+            const { owner, repo, number } = context.issue;
+            const commentAuthor = context.payload.pull_request.user.login;
+            const commentBody = `Hey @${ commentAuthor } ,Wanted to let you know that we have decided to close your pull request.
+            In case of any issues, you can contact me.
+            Thank you!`;
+            await github.issues.createComment({ owner, repo, issue_number: number, body: commentBody });
+            console.log(`Commented on the closed PR: ${commentBody}.`);
