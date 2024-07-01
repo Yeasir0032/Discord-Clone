@@ -1,0 +1,30 @@
+name: Assign Issue to Self
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write  # Ensure the workflow has write permissions for issues
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Assign issue to commenter if they comment "self"
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const issueNumber = context.issue.number;
+          const commentBody = context.payload.comment.body.trim().toLowerCase();
+          const commenter = context.payload.comment.user.login;
+
+          if (commentBody === 'self') {
+            await github.rest.issues.addAssignees({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              assignees: [commenter]
+            });
+          }
