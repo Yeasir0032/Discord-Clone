@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressContentEditableWarning={true}>
-        <body className={cn(inter.className, "bg-white dark:bg-[#313338]")}>
+        <body className={cn(inter.className, "bg-[url('/background.svg')] h-[100vh] w-[98vw] relative bg-no-repeat bg-cover")}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
