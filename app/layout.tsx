@@ -1,12 +1,9 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ClerkProvider } from "@clerk/nextjs";
-import { ThemeProvider } from "@/components/providers/theme-provider";
-import { cn } from "@/lib/utils";
-import { ModalProvider } from "@/components/providers/modal-provider";
-import { SocketProvider } from "@/components/providers/socket-provider";
-import { QueryProvider } from "@/components/providers/query-provider";
+import "./globals.css";
+import '@radix-ui/themes/styles.css';
+import { Theme } from '@radix-ui/themes';
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,26 +13,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <ClerkProvider>
-      <html lang="en" suppressContentEditableWarning={true}>
-        <body className={cn(inter.className, "bg-white dark:bg-[#313338]")}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            storageKey="discord-theme"
-            enableSystem={false}
-          >
-            <SocketProvider>
-              <ModalProvider />
-              <QueryProvider>{children}</QueryProvider>
-            </SocketProvider>
-          </ThemeProvider>
+    <html lang="en">
+      <body className='bg-[url("/background.svg")] bg-cover bg-repeat overflow-x-hidden scroll-smooth scroll-m-0 scroll-p-0'>
+        <Theme>
+        {children}
+        </Theme>
         </body>
-      </html>
-    </ClerkProvider>
+    </html>
   );
 }
